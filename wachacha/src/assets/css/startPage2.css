@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 a {
   text-decoration: none;
@@ -7,18 +8,43 @@ a {
 img {
   max-width: 100%;
 }
+nav {
+  padding: 0 10%;
+}
+li {
+  list-style: none;
+  padding-left: 0px;
+}
 html,
 body {
-  width: 100%;
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: lightcoral;
+  display: grid;
 }
 #startPage2 {
-  background-image: url(../../img/큰사진.jpg);
-  min-height: 100vh;
-  background-size: cover;
+  background-image: url(../../img/배경화면.png);
+  background-size: cover; /*이미지가 위아래 다 나오도록하는거 */
+  background-position: center top; /*이미지 중앙정렬 잘리는거방지 */
+  background-repeat: no-repeat; /*반복금지*/
+}
+.big-bg {
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.section_center {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
